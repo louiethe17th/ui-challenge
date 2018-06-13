@@ -1,12 +1,9 @@
-body{
-    height: 768px;
-    width: 480px;
-}
 
-div{
+
+/* div{
     border: black solid 1px;
 
-}
+} */
 .wrapper {
     display: grid;
     grid-template-areas: 
@@ -22,56 +19,135 @@ div{
 }
 
 .a {
+    border: black solid 1px;
+
     grid-area: a;
     
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/480x75");
     
 }
 
 .b {
+    border: black solid 1px;
     grid-area: b;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/480x150");
 
 }
 
 .c {
+    border: black solid 1px;
     grid-area: c;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/480x125");
 
 }
 
 .d{
+    border: black solid 1px;
     grid-area: d;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/480x125");
 
 }
 
 .e{
+    border: black solid 1px;
     grid-area: e;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/240x240");
 
 }
 
 .f{
+    border: black solid 1px;
     grid-area: f;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/240x240");
 
 }
 
 .g{
+    border: black solid 1px;
     grid-area: g;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/240x240");
 
 }
 
 .h{
+    border: black solid 1px;
     grid-area: h;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/240x240");
 
 }
 
 .i{
+    border: black solid 1px;
     grid-area: i;
-    background-color: tan;
+    background-image: url("http://via.placeholder.com/480x80");
+
+}
+
+@media only screen and (min-width: 960px){
+    .wrapper {
+        display: grid;
+        grid-template-areas: 
+        "a a a a a"
+        "b c c d d"
+        "b e f g h"
+        "b i i i i";
+        grid-template-rows: 100px 200px 250px 150px;
+        grid-template-columns: 200px 190px 190px 190px 190px;
+    }
+
+    .a {
+        grid-area: a;
+        
+        background-image: url("http://via.placeholder.com/960x100");
+        
+    }
+    
+    .b {
+        grid-area: b;
+        background-image: url("http://via.placeholder.com/200x600");
+    
+    }
+    
+    .c {
+        grid-area: c;
+        background-image: url("http://via.placeholder.com/380x200");
+    
+    }
+    
+    .d{
+        grid-area: d;
+        background-image: url("http://via.placeholder.com/380x200");
+    
+    }
+    
+    .e{
+        grid-area: e;
+        background-image: url("http://via.placeholder.com/190x250");
+    
+    }
+    
+    .f{
+        grid-area: f;
+        background-image: url("http://via.placeholder.com/190x250");
+    
+    }
+    
+    .g{
+        grid-area: g;
+        background-image: url("http://via.placeholder.com/190x250");
+    
+    }
+    
+    .h{
+        grid-area: h;
+        background-image: url("http://via.placeholder.com/190x250");
+    
+    }
+    
+    .i{
+        grid-area: i;
+        background-image: url("http://via.placeholder.com/760x150");
+    
+    }
 
 }
